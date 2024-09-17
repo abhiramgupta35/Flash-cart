@@ -1,5 +1,5 @@
 {
-  "name": "febno-cart",
+  "name": "flash-cart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,11 +8,14 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.4",
     "bootstrap": "^5.3.3",
+    "firebase": "^10.13.0",
     "foundation-sites": "^6.8.1",
+    "lottie-react": "^2.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
+    "react-toastify": "^10.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

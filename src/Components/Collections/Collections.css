@@ -1,30 +1,56 @@
-.Product-container{
-    display: flex;         
-    flex-wrap: wrap;        
-    justify-content: space-evenly;
+
+
+
+.collection-header{
+   display: flex;
+   justify-content: center;
+
 }
+.collection-title {
+    font-size: 3rem;
+   
+}
+.collecton-features{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%;
+   margin-bottom: 3%;
+    border: 1px, #363636;
+}
+
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-right:5%;
+
+}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-*
-{
+
+* {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 
-body
-{
+body {
     font-family: 'Roboto', sans-serif;
 }
-a
-{
+
+a {
     text-decoration: none;
 }
+
 .product-card {
-    width: 250px;
+    width: 300px;
     position: relative;
-    box-shadow: 0 2px 7px #dfdfdf;
+    box-shadow: 0 2px 7px #d4d2d2;
     margin: 50px auto;
     background: #fafafa;
 }
@@ -36,7 +62,7 @@ a
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    background: red;
+    background: rgb(191, 188, 188);
     color: #fff;
     padding: 3px 10px;
 }
@@ -116,19 +142,70 @@ a
 
 .product-links {
     text-align: right;
+    display: inline-block;
+  
+    
 }
 
-.product-links a {
+.product-links {
     display: inline-block;
     margin-left: 5px;
-    color: #e1e1e1;
+    color: #fd8300;
     transition: 0.3s;
     font-size: 17px;
+    margin-bottom: 2px;
 }
 
 .product-links a:hover {
     color: #fbb72c;
 }
-  
+
 
   
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
